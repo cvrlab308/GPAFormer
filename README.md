@@ -10,7 +10,6 @@ This repository is prepared for source-code release only. It intentionally does 
 gpaformer/
   GPAFormer.py
   region_growing.py
-  gaussian_ellipsoid_moment_loss.py
 scripts/
   train.py
   smoke_test.py
