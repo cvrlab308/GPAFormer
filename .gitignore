@@ -1,0 +1,50 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and local experiment outputs
+logs/
+runs/
+outputs/
+checkpoints/
+persistent_cache/
+wandb/
+tensorboard/
+*.log
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+weights/
+pretrained/
+
+# Medical images, arrays, and private datasets
+data/
+dataset*/
+*.nii
+*.nii.gz
+*.npy
+*.npz
+*.pkl
+*.h5
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.7z

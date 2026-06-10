@@ -1,0 +1,45 @@
+seed: 42
+
+data:
+  root: /path/to/BTCV
+  datalist: /path/to/BTCV/dataset_fold0.json
+  list_key: training
+
+model:
+  in_channels: 1
+  num_classes: 14
+  sr_ratios: [4, 2, 1]
+  embed_dims: [32, 64, 160]
+  patch_kernel_size:
+    - [7, 5, 3]
+    - 3
+    - 3
+  patch_stride: [2, 2, 2]
+  patch_padding:
+    - [3, 2, 1]
+    - 1
+    - 1
+  mlp_ratios: [4, 4, 4]
+  num_heads: [1, 2, 5]
+  depths: [2, 2, 2]
+  decoder_head_embedding_dim: 160
+  decoder_dropout: 0.0
+
+preprocessing:
+  spacing: [1.5, 1.5, 2.0]
+  intensity_window: [-175.0, 250.0]
+  roi_size: [96, 96, 96]
+  train_num_samples: 4
+
+training:
+  output_dir: runs/btcv_fold0
+  cache_dir: runs/btcv_fold0/persistent_cache
+  max_iters: 100000
+  batch_size: 1
+  grad_accum_steps: 4
+  num_workers: 4
+  lr: 0.0001
+  weight_decay: 0.00001
+  amp: true
+  print_every: 50
+  save_every: 1000
