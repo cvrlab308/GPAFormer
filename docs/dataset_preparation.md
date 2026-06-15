@@ -1,6 +1,5 @@
 # Dataset Preparation
 
-This repository does not include medical images, labels, or train/validation split files.
 Prepare the dataset locally and provide a MONAI Decathlon-style datalist JSON to the
 training script.
 
@@ -39,7 +38,7 @@ The datalist file should contain paths relative to `data.root` in the config, or
 ```
 
 Only the list selected by `data.list_key` is used by the included training script.
-No split files are distributed with this code release.
+
 
 ## Preprocessing
 
