@@ -2,7 +2,7 @@
 
 Code release for GPAFormer: Graph-guided Patch Aggregation Transformer for Efficient 3D Medical Image Segmentation.
 
-This repository is prepared for source-code release only. It intentionally does not include pretrained weights, dataset split files, inference/evaluation scripts, experiment logs, result tables, medical images, or generated predictions.
+This repository is prepared for source-code release only. 
 
 ## Repository Contents
 
