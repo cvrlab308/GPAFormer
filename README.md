@@ -37,7 +37,7 @@ Install a PyTorch build that matches your CUDA driver if the default package ind
 
 ## Data Preparation
 
-Prepare the dataset locally and create a MONAI Decathlon-style datalist JSON. No dataset or split file is distributed in this repository.
+Prepare the dataset locally and create a MONAI Decathlon-style datalist JSON.
 
 See [docs/dataset_preparation.md](docs/dataset_preparation.md).
 
